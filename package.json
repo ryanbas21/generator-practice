@@ -1,0 +1,42 @@
+{
+  "name": "grange",
+  "version": "1.0.0",
+  "description": "Create generators that generate ranged values one at a time.",
+  "main": "source/grange.js",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run -s lint",
+    "test": "cross-env NODE_PATH='source' node source/test/index.js",
+    "watch": "watch 'clear && npm run -s test' source",
+    "update": "updtr"
+  },
+  "keywords": [
+    "Generator",
+    "range"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ericelliott/grange.git"
+  },
+  "author": "Eric Elliott",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-eslint": "^7.2.1",
+    "babel-preset-es2015": "^6.24.0",
+    "cross-env": "1.0.7",
+    "eslint": "3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "updtr": "0.1.14",
+    "watch": "0.18.0"
+  },
+  "Dependencies": {
+    "tape": "4.5.1"
+  },
+  "dependencies": {
+    "tape": "^4.6.3"
+  }
+}
